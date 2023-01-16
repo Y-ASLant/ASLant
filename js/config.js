@@ -4,7 +4,7 @@ export default {
         // 账号
         owner: "aslant",
         // 仓库名称
-        repo: "images",
+        repo: "iMa",
         // 分支名
         sha: "master"
     },
