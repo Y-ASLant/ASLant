@@ -29,26 +29,6 @@
                 <div :class="{ leftMenu: true, leftMenuHide: menuShow }" v-cloak>
                     <!-- 菜单 -->
                     <el-tabs v-model="treeMenu">
-                        <!-- 文件树 -->
-                            <div class="trees">
-                                <!-- 文件列表头部 -->
-                                <div class="treesHead">
-                                    <a :href="Trees.giteeURL" target="_blank">
-                                        <i class="fa fa-folder-open"></i>
-                                        {{ Trees.sha }}
-                                    </a>
-                                </div>
-                                <!-- 文件列表 -->
-                                <div
-                                    :class="{ treesItem: true, treesItemActive: index == contentSelectIndex }"
-                                    v-for="(item, index) in Trees.tree"
-                                    @click="getContents(item.path, index)"
-                                >
-                                    <i class="fa fa-file-code-o"></i>
-                                    {{ item.path }}
-                                </div>
-                            </div>
-                        </el-tab-pane>
                         <!-- 目录 -->
                         <el-tab-pane label="目录" name="目录">
                             <div class="contentTrees">
