@@ -33,7 +33,7 @@
                         <el-tab-pane label="目录" name="目录">
                             <div class="contentTrees">
                                 <div
-                                    :class="{ contentItem: true, contentItemActive: index == menuSelectIndex, [item.tagName]: true }"
+                                    :class="{ contentItem: true, contentItemActive: index == contentSelectIndex, [item.tagName]: true }"
                                     v-for="(item, index) in menuData"
                                     @click="menuSelect(index)"
                                 >
