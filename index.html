@@ -27,7 +27,7 @@
             <!-- 主体 -->
             <div class="main" v-else v-loading="loadContent" element-loading-text="全力加载中...">
                 <!-- 左侧 -->
-                <div :class="{ leftMenu: true }" v-cloak>
+                <div :class="{ leftMenu: true leftMenuHide: menuShow }" v-cloak>
                     <!-- 菜单 -->
                     <el-tabs v-model="treeMenu">
                     
